@@ -38,7 +38,6 @@ Pod::Spec.new do |spec|
 
   # Set this environment variable when not using the `:path` option to install the pod.
   # E.g. when publishing this spec to a spec repo.
-  source_files = 'yoga/**/*.{c,h}'
-  source_files = File.join('ReactCommon/yoga', source_files) if ENV['INSTALL_YOGA_WITHOUT_PATH_OPTION']
+  source_files = 'ReactCommon/yoga/yoga/**/*.{c,h}'
   spec.source_files = source_files
 end
